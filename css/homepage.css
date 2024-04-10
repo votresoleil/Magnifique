@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Poppins, sans-serif;
+    transition: all 0.3s ease-in-out;
+    
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    position: relative;
+    z-index: 1;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+.main-container {
+    width: 100%;
+    max-width: 1280px;
+}
+section {
+    max-height: 800px;
+}
+section.view3 {
+    margin-bottom: 100px;
+}
+section.view1 {
+    /* BG */
+    background: url(../img/bg&icons/view1.png);
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+section.view {
+    background: #fff;
+}
+
+/* section1 */
+section.view1 .container1 {
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    transform: translateX(-50%) translateY( -50% );
+    color: white;
+}
+section.view1 .container1 p {
+    text-align: justify;
+}
+
+section.footer {
+    margin-top: 30px;
+}
+
+/* media queries */
+
+@media  screen and (max-width: 850px) {
+    section.view3 {
+        margin-bottom: 0;
+    }
+}
+
+
+
+

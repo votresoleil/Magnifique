@@ -1,0 +1,186 @@
+
+.main-card-container {
+    /* height: 100%; */
+    /* display: grid;
+    place-items: center;
+
+    position: relative; */
+}
+.card-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    align-content: space-around;
+    flex-wrap: wrap;
+    padding: 0 40px;
+    margin-top: 50px;
+    height: 100vh;
+
+    /* background-color: green; */
+}
+
+.card-container .card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    position: relative;
+
+    height: 290px;
+    width: 100%;
+    max-width: 250px;
+    min-width: 200px;
+    margin: 0 20px;
+    box-shadow:  0 4px 8px 0 rgba(0,0,0,0.5);
+    border-radius: 5px;
+    transition: 0.3s;
+    background: rgba(0,0,0,0.1);
+}
+
+.card-container .card:hover {
+    height: 430px;
+}   
+
+.card .img {
+    position: absolute;
+    top: 1%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    padding: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.5) inset;
+    /* background-color: yellow; */
+}
+
+.card .img img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+
+}
+
+.card .top-text {
+    padding: 5px;
+    margin-top: 250px;
+    text-align: center;
+
+    /* background-color: YELLOW; */
+}
+.card:hover .top-text {
+    margin-top: 50px;
+}
+.card .top-text .title {
+    font-size: 25px;
+    font-weight: 600;
+    color: #202020;
+}
+.card:hover .top-text .title {
+    font-size: 17px;
+}
+.card .bottom-text {
+    padding: 0 20px 10px 20px;
+    margin-top: 10px;
+
+    opacity: 0;
+    visibility: hidden;
+    transform: 0.1s;
+}
+.card:hover .bottom-text {
+    opacity: 1;
+    visibility: visible;
+    transition-delay: 0.1s;
+}
+.card .bottom-text p {
+    text-align: justify;
+}
+.card .bottom-text .readmore-btn {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+}
+.card .bottom-text .readmore-btn a {
+    text-decoration: none;
+    background: #e74c3c;
+    color: #fff;
+    padding: 5px 8px;
+    border-radius: 3px;
+    display: inline;
+    transition: 0.2s;
+}
+
+.card .bottom-text .readmore-btn a:active {
+    background: #fff;
+    color: #e74c3c;
+    border: 1px solid #e74c3c;
+}
+
+
+
+.top-package-title {
+    position: absolute;
+    top: -1%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    padding: 20px 30px;
+
+    background-color: white;
+}
+.top-package-title p {
+    border-bottom: 3px solid #000;
+    padding: 30px 0;
+}
+.top-package-title .details-text {
+    align-self: center;
+    font-weight: 400;
+    margin-top: 40px;
+}
+.top-package-title .details-text {
+    align-self: center;
+    font-weight: 400;
+    margin: 20px;
+}
+
+
+
+@media screen and  (max-width:800px) {
+    .card-container {
+        flex-direction: column;
+        flex-wrap: nowrap;
+        padding: 20px;
+        margin-top: 100px;
+        height: 1400px;
+    }
+
+    .card-container .card {
+        margin: 50px 0;
+        height: 200px;
+    }
+    .card-container .card:hover {
+        height: 350px;
+    }   
+
+    .card .top-text {
+        padding: 10px;
+        margin-top: 180px;
+    }
+
+    .card:hover .top-text {
+        margin-top: 0px;
+    }
+    .card .top-text .title {
+        font-size: 25px;
+        font-weight: 600;
+        color: #202020;
+    }
+    .card:hover .top-text .title {
+        font-size: 17px;
+    }
+}

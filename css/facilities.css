@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Poppins, sans-serif;
+    transition: all 0.3s ease-in-out;
+    
+}
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: white;
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    width: 100%;
+    max-width: 1280px;
+}
+
+section {
+    position: relative;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+.parallax-facility {
+    background: url('../img/gallery/tranding1.PNG') no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 50vh;
+}
