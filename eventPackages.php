@@ -24,7 +24,7 @@
             <div class="parallax-inner">
 
             </div>
-        </section>
+        </section> 
         <!-- EVENT PACKAGES SECTION 1 -->
         <section>
             <?php include 'eventPackages-section/section1.html'; ?>
@@ -40,11 +40,12 @@
             <?php include 'eventPackages-section/section2.html'; ?>
         </section>
 
-        <section class="parallax-3">
+        <!--<section class="parallax-3">
             <div class="parallax-inner">
 
             </div>
-        </section>
+        </section> -->
+        
         <!-- EVENT PACKAGES SECTION 3 -->
         <section>
             <?php include 'eventPackages-section/section2.html'; ?>
